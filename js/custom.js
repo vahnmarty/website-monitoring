@@ -47,3 +47,21 @@ $(document).ready(function(){
         }
     });
 });
+
+$('#form-ping').on('submit', function(e){
+    e.preventDefault();
+    var url = $('input[name="url"]').val();
+    var pr = $('#ping-result');
+
+    console.log('Pinging ' + url);
+    var time = new Date;
+
+    $.ajax({
+        url: url,
+        success:function(data){
+            pr.empty();
+            ping = new Date - time;
+            pr.append('<p><small>Result: <span class="text-success">'+ping+' ms</span></small></p>');
+        }
+    });
+});
