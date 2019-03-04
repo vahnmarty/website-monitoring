@@ -1,0 +1,406 @@
+/*! Place your custom styles here */
+
+.btn{
+    border-radius: 32px;
+}
+
+.bar .logo{
+    max-height: 3.5em;
+}
+
+ul.menu-horizontal.text-left{
+    line-height: 3.5em;
+}
+
+.input-radio label{
+    display: inline-block !important;
+    top: 7px;
+    position: relative;
+}
+
+.company-logo{
+    height: 4.5em;
+    margin: 0 1em;
+}
+
+ul.list--circle {
+    list-style-type: circle;
+}
+
+.bg--dual-color:after{
+    content: '';
+    width: 55%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #eee;
+}
+
+.opaque{
+    opacity: 1 !important;
+}
+
+.icon-check{
+    position: relative;
+    top: 5px;
+    font-size: 1em;
+}
+
+.color--gray{
+    color: #666666 !important;
+}
+
+hr.xs{
+    width: 25%;
+    margin: 0 auto;
+}
+
+.accordion li{
+    border: 1px solid #ddd;
+    margin-bottom: 0 !important;
+}
+.accordion__title{
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+}
+
+.accordion li.active .accordion__content{
+    padding: 1.5em;
+    background: #eee;
+    padding-bottom: 0;
+}
+
+.btn--primary-2:hover{
+   /* color: #fff !important;*/
+}
+
+body:after{
+    content:'';
+    position: absolute;
+    top: 116px;
+    width: 100%;
+    height: 200px;
+    left: 0;
+    background: #f5f5f5;
+    z-index: -1;
+}
+.nav-container{
+    background: white;
+}
+
+.feature.feature--featured:after{
+    top: 0 !important;
+}
+
+.progress{
+    
+}
+
+.progress__title{
+    line-height: 1.25em;
+}
+
+.progress--round{    
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    width: 36px;
+    height: 36px;
+    padding: 2px 8px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.progress-arrow{
+    line-height: 8em;
+}
+.progress-arrow .arrow{
+    margin: 0 -30px;
+}
+
+.progress-col-arrow{
+    padding: 0;
+    margin: 0 -0.75em;    
+}
+
+.progress h6, .progress span{
+    color: #bbb;
+}
+
+.progress.active h6{
+    color: #000;
+}
+.progress.active span{
+    color: #fff;
+}
+
+.progress.active .progress--round{
+    border-color: #73b543;
+    font-weight: bolder;
+}
+
+.progress--round:after{
+    content: url('../img/arrow.png');
+    margin-left: 1.8em;
+    position: absolute;
+}
+
+.image-with-arrow{
+    content: url('../img/arrow-active.png');
+    margin-left: 4em;
+    position: absolute;
+    top: 12px;
+}
+.progress--kash:after{
+    content: '';
+}
+
+hr.progress-line{
+    position: relative;
+}
+hr.progress-line:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background: #000;
+    left: 0;
+    top: -3px;
+}
+
+hr.progress-line.center:before{
+  left: 50%;
+  margin-left: 25px;
+}
+
+hr.progress-line--center:before{
+  left: 50%;
+  margin-left: -25px;
+}
+
+hr.progress-line--active:before{
+  background: #73b543;
+}
+
+.btn--wide{
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+button[type="submit"].btn--loading:after, input[type="submit"][type="submit"].btn--loading:after{
+    background: #f48706;
+}
+
+button[type="submit"].btn--loading .btn__text{
+    opacity: 0.7;
+}
+
+.preloader{position:fixed;top:0;left:0;width:100%;height:100%;bottom:0;background:rgba(0,0,0,.8);z-index:9999;}
+.preloader-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-100%)}
+
+.bg--primary-transparent{
+    background: rgba(115, 181, 67, 0.4);
+    border-color: #73b543;
+    color: #fff;
+}
+
+.circle-loader {
+  margin-bottom: 3.5em;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-left-color: #5cb85c;
+  animation: loader-spin 1.2s infinite linear;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  width: 7em;
+  height: 7em;
+  margin: 2em auto;
+  display: block;
+}
+
+.load-complete {
+  -webkit-animation: none;
+  animation: none;
+  border-color: #5cb85c;
+  transition: border 500ms ease-out;
+}
+
+.checkmark {
+  display: none;
+}
+.checkmark.draw:after {
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-name: checkmark;
+  transform: scaleX(-1) rotate(135deg);
+}
+.checkmark:after {
+  opacity: 1;
+  height: 3.5em;
+  width: 1.75em;
+  transform-origin: left top;
+  border-right: 3px solid #5cb85c;
+  border-top: 3px solid #5cb85c;
+  content: '';
+  left: 1.75em;
+  top: 3.5em;
+  position: absolute;
+}
+
+.checkmark.draw:before{
+  display: none;
+}
+.checkmark:not([class*='bg-']){
+  height: 0;
+}
+
+.checkmark-message{
+    display: none;
+}
+
+.accordion.borderless li{
+  border: none;
+}
+
+.testimonial p{
+  max-width: 70% !important;
+  margin: 0 auto;
+}
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 1.75em;
+    opacity: 1;
+  }
+  40% {
+    height: 3.5em;
+    width: 1.75em;
+    opacity: 1;
+  }
+  100% {
+    height: 3.5em;
+    width: 1.75em;
+    opacity: 1;
+  }
+}
+
+
+
+@media all and (max-width: 787px) {
+  body:after{
+    top: 0;
+  }
+
+  .progress__title {
+    visibility: hidden;
+  }
+
+  .active .progress__title{
+    visibility: visible;
+  }
+  .progress--round{
+    text-align: center;
+  }
+  .active .progress--round{
+    margin: 0;
+  }
+
+  .progress--round:after{
+    display: none;
+  }
+
+  .active .progress--round:after{
+    display: inline-block;
+    top: 3px;
+  }
+
+  .progress--round{
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    width: 30px;
+    height: 30px;
+    padding: 1px 8px;
+  }
+
+  .active{
+    padding: 0 30px;
+  }
+}
+
+#sidebar .menu{
+  padding-left: 50px;
+}
+
+.menu-item {
+  padding: 15px;
+}
+
+.menu-item:hover{
+  background: #73b543;
+  color: white;
+}
+
+.menu-item:hover >  a{
+  color: white !important;
+}
+
+.feature-3 i{
+  width: 15%;
+}
+
+.feature-3 .feature__body{
+  width: 85%;
+}
+
+.left-sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 450px;
+  background: #152733;
+  font-size: 14px;
+  line-height: 20px;
+  color: white !important;
+  overflow: auto;
+  padding-right: 15px !important;
+}
+
+.left-sidebar h3, .left-sidebar p, .left-sidebar strong{
+  color: white;
+}
+
+#main{
+  margin-left: 450px;
+  min-height: 100vh;
+  background: white;
+}
+
+.main-content{
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.bold{
+  font-weight: 900;
+}
+
+@media (min-width: 768px){
+div[class*='col-'] > form div[class*='col-']:first-child:nth-last-child(2) {
+    padding-left :15px;
+}
