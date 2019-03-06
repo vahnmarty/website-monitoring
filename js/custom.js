@@ -63,7 +63,13 @@ function monitorNow(){
                             ping = new Date - time;
 
                             var tr = $('<tr>');
-                            tr.append('<td><i class="fa fa-circle text-success" data-toggle="tooltip" data-placement="top" title="OK"></i></td>');
+                            if(ping > 5000){
+                                tr.append('<td><i class="fa fa-circle text-orange" data-toggle="tooltip" data-placement="top" title="Warning"></i></td>');
+                            
+                            }else{
+                                tr.append('<td><i class="fa fa-circle text-success" data-toggle="tooltip" data-placement="top" title="OK"></i></td>');
+                            
+                            }
                             tr.append('<td>'+item["category"]+'</td>');
                             tr.append('<td>'+item["website"]+'</td>');
                             tr.append('<td>'+item["domain"]+'</td>');
